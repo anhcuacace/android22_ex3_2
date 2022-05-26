@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MayTinhActivity">
+
+
+    <TextView
+        android:id="@+id/editText_kq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botron"
+        android:hint="@string/ketqua"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_nhan">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editText_nsduoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:background="@drawable/botron"
+        android:hint="@string/nhapso"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_kq">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_nstren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:background="@drawable/botron"
+        android:hint="@string/nhapso"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_nsduoi">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_cong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_button"
+        android:padding="8dp"
+        android:text="+"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_tru"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_tru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_button"
+        android:padding="8dp"
+        android:text="-"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toRightOf="@id/btn_cong"
+        app:layout_constraintRight_toLeftOf="@id/btn_nhan"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_nhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_button"
+        android:padding="8dp"
+        android:text="*"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_tru"
+        app:layout_constraintRight_toLeftOf="@id/btn_chia"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_chia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_button"
+        android:padding="8dp"
+        android:text="/"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_nhan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView_dktk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="@string/tieuDe"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_nsdt"
+        app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+
+    <EditText
+        android:id="@+id/editText_nsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botron"
+        android:hint="@string/nhapsdt"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:padding="8dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_nemail"></EditText>
+
+
+    <EditText
+        android:id="@+id/editText_nemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botron"
+        android:hint="@string/nhapemail"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:padding="8dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_ntdd"></EditText>
+
+    <EditText
+        android:id="@+id/editText_ntdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botron"
+        android:hint="@string/nhaptendaydu"
+        android:padding="8dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_ntcq"></EditText>
+
+
+    <EditText
+        android:id="@+id/editText_ntcq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:layout_margin="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botron"
+        android:hint="@string/nhaptencoquan"
+
+        android:padding="8dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_nmk"></EditText>
+
+    <EditText
+        android:id="@+id/editText_nmk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8E8E8E"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botron"
+        android:hint="@string/nhapMatKhau"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_tieptuc"></EditText>
+
+    <Button
+        android:id="@+id/btn_tieptuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botron_button"
+
+        android:padding="8dp"
+        android:text="@string/tiepTuc"
+        android:textAllCaps="false"
+
+        app:layout_constraintTop_toBottomOf="@id/gl1">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_baoloi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text=""
+        android:textColor="#F10000"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_tieptuc"
+        app:layout_constraintTop_toBottomOf="@id/btn_tieptuc"></TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/yeucau_ttcn"
+        app:layout_constraintLeft_toLeftOf="@id/btn_tieptuc"
+        app:layout_constraintTop_toBottomOf="@id/tv_baoloi"></TextView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"></androidx.constraintlayout.widget.Guideline>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

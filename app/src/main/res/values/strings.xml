@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">android22_ex3</string>
+    <string name="title_activity_bai2">Bai2Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="dangKyTaiKhoan">Đăng ký Tai Khoản</string>
+    <string name="tenTaiKhoan">Tên tài khoản</string>
+    <string name="nhapMatKhau">Nhập mật khẩu</string>
+    <string name="nhapLaiMatKhau">Nhập lại mật khẩu</string>
+    <string name="tiepTuc">Tiếp tục</string>
+
+    <string name="yeuCau">Yêu cầu:\nTên tài khoản tối thiểu 6 ký tự và không có dấu cách\nMật khẩu tối thiểu là 8 ký tự và phải trùng nhau\nNếu không đúng điều kiện sẽ hiển thị lên TextView và\nbackground của edittext sẽ đổi sang màu đỏ</string>
+    <string name="tieuDe">Nhập Thông tin cá nhân</string>
+    <string name="nhapsdt">Nhập sđt</string>
+    <string name="nhapemail">Nhập email</string>
+    <string name="nhaptendaydu">Nhập tên đầy đủ</string>
+    <string name="nhaptencoquan">Nhập tên cơ quan</string>
+    <string name="yeucau_ttcn">Yêu cầu:\nsố điện thoại và email phải hợp lệ\nMật khẩu tối thiểu là 8 ký tự\nEdittext nào không nhập vào thì báo lỗi\nNếu không đúng điều kiện sẽ hiển thị lên TextView và\nbackground của edittext sẽ đổi sang màu đỏ</string>
+<string name="nhapso">Nhập số</string>
+    <string name="ketqua">Kết quả</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
